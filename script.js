@@ -28,8 +28,11 @@
         // those which selected add background color
         event.currentTarget.classList.add("button-white");
         event.target.disabled=true;
-       
-        
+         
+        // remaining seat
+        const remainingSeatElement=document.getElementById("remaining-seat");
+        const remainingSeat=parseInt(remainingSeatElement.innerText)-1;
+        remainingSeatElement.innerText=remainingSeat;
 
       }
       else{
@@ -92,11 +95,24 @@
     else
     {
       alert("wrong coupon");
-      
+
     }
   }
   else{
     alert("you have to buy 4 tickets to get the offer of coupon sir")
   }
   coupon.value=' ';
+});
+
+// form next button
+const nextButton=document.getElementById("next-button");
+// nextButton.disabled=false;
+const phone=document.getElementById("phone");
+
+
+// console.log(phone.value);
+phone.addEventListener("keyup",function(){
+  if(count>2 && phone.value.length>0){
+    nextButton.disabled=false;
+  }
 })
