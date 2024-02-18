@@ -9,3 +9,11 @@
 .ash{
   background-color: #F7F8F8;
 }
+
+.disabled-kbd {
+  /* color: #666; Change text color to gray */
+  /* background-color: #f4f4f4; Change background color to light gray */
+  /* border: 1px solid #ccc; Add a border */
+  /* padding: 5px 10px; Adjust padding for better appearance */
+  cursor: not-allowed; /* Change cursor to indicate not allowed */
+}

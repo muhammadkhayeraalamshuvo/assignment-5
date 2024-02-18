@@ -59,40 +59,68 @@
                 <p class="ash p-3 w-[100px]  mt-4 rounded-md"><img src="images/bus-logo.png" alt="" class="w-[30px] mx-auto  "></p>
             </div>
             <!-- seats -->
-            <div class="flex justify-around items-center">
-                <div class="flex flex-col gap-3">
-                   <p class="border seat">A</p>
-                   <p class="border seat">B</p>
-                   <p class="border seat">C</p>
-                   <p class="border seat">D</p>
-                   <p class="border seat">E</p>
-                   <p class="border seat">F</p>
-                   <p class="border seat">G</p>
-                   <p class="border seat">H</p>
-                   <p class="border seat">I</p>
-                   <p class="border seat">J</p>
+            <div class="flex justify-around items-center ">
+                <div class="flex flex-col gap-10 text-2xl items-center">
+                   <p class="">A</p>
+                   <p class="">B</p>
+                   <p class="">C</p>
+                   <p class="">D</p>
+                   <p class="">E</p>
+                   <p class="">F</p>
+                   <p class="">G</p>
+                   <p class="">H</p>
+                   <p class="">I</p>
+                   <p class="">J</p>
                 </div>
-                <div class="flex flex-col gap-3">
-                   <kbd class="kbd seat">A</kbd>
-                   <kbd class="kbd seat">B</kbd>
-                   <kbd class="kbd seat">C</kbd>
-                   <kbd class="kbd seat">D</kbd>
-                   <kbd class="kbd seat">E</kbd>
-                   <kbd class="kbd seat">F</kbd>
-                   <kbd class="kbd seat">G</kbd>
-                   <kbd class="kbd seat">H</kbd>
-                   <kbd class="kbd seat">I</kbd>
-                   <kbd class="kbd seat">J</kbd>
+                <div class="flex flex-col gap-5 text-2xl">
+                   <kbd class="kbd seat">A1</kbd>
+                   <kbd class="kbd seat">B1</kbd>
+                   <kbd class="kbd seat">C1</kbd>
+                   <kbd class="kbd seat">D1</kbd>
+                   <kbd class="kbd seat">E1</kbd>
+                   <kbd class="kbd seat">F1</kbd>
+                   <kbd class="kbd seat">G1</kbd>
+                   <kbd class="kbd seat">H1</kbd>
+                   <kbd class="kbd seat">I1</kbd>
+                   <kbd class="kbd seat">J1</kbd>
                 </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                <div class="flex flex-col gap-5 text-2xl">
+                    <kbd class="kbd seat">A2</kbd>
+                    <kbd class="kbd seat">B2</kbd>
+                    <kbd class="kbd seat">C2</kbd>
+                    <kbd class="kbd seat">D2</kbd>
+                    <kbd class="kbd seat">E2</kbd>
+                    <kbd class="kbd seat">F2</kbd>
+                    <kbd class="kbd seat">G2</kbd>
+                    <kbd class="kbd seat">H2</kbd>
+                    <kbd class="kbd seat">I2</kbd>
+                    <kbd class="kbd seat">J2</kbd>
+                 </div>
+                <div class="flex flex-col gap-5 text-2xl">
+                    <kbd class="kbd seat">A3</kbd>
+                    <kbd class="kbd seat">B3</kbd>
+                    <kbd class="kbd seat">C3</kbd>
+                    <kbd class="kbd seat">D3</kbd>
+                    <kbd class="kbd seat">E3</kbd>
+                    <kbd class="kbd seat">F3</kbd>
+                    <kbd class="kbd seat">G3</kbd>
+                    <kbd class="kbd seat">H3</kbd>
+                    <kbd class="kbd seat">I3</kbd>
+                    <kbd class="kbd seat">J3</kbd>
+                 </div>
+                <div class="flex flex-col gap-5 text-2xl">
+                    <kbd class="kbd seat">A4</kbd>
+                    <kbd class="kbd seat">B4</kbd>
+                    <kbd class="kbd seat">C4</kbd>
+                    <kbd class="kbd seat">D4</kbd>
+                    <kbd class="kbd seat">E4</kbd>
+                    <kbd class="kbd seat">F4</kbd>
+                    <kbd class="kbd seat">G4</kbd>
+                    <kbd class="kbd seat">H4</kbd>
+                    <kbd class="kbd seat">I4</kbd>
+                    <kbd class="kbd seat">J4</kbd>
+                 </div>
+              
              
             </div>
 
@@ -115,14 +143,17 @@
                   <hr class="ml-4 mr-4">
                   <div class="flex justify-between ml-4 mt-5 mb-5 mr-4 font-semibold">
                     <p>Total Price</p>
-                    <p>BDT <span id="total-price"></span></p>
+                    <p>BDT <span id="total-price">0</span></p>
+                  </div>
+                  <div class="flex justify-between ml-4 mt-5 mb-5 mr-4 font-semibold" id="discount">
+                    
                   </div>
                  <div class="flex items-center">
-                    <input type="text" name="" id="coupon" placeholder="Have any coupon?" class=" ml-4 mt-5 mb-5 mr-4 p-3 rounded-md"> <button class="btn button-white">Apply</button>
+                    <input type="text" name="" id="coupon" placeholder="Have any coupon?" class=" ml-4 mt-5 mb-5 mr-4 p-3 rounded-md"> <button class="btn button-white" id="apply-button" >Apply</button>
                  </div>
                  <div class="flex justify-between ml-4 mt-5 mb-5 mr-4 font-semibold">
                     <p>Grand Total</p>
-                    <p>BDT <span id="total-price"></span></p>
+                    <p>BDT <span id="grand-total">0</span></p>
                   </div>
             </div>
             <!-- form related -->
@@ -130,9 +161,9 @@
                 <h3  class="font-semibold">Passenger Name*</h3>
                 <input type="text" id="" placeholder="Enter your name" class="w-full border p-4 rounded-lg">
                 <h3 class="font-semibold">Phone Number*</h3>
-                <input type="number" id="" placeholder="Enter your name" class="w-full border p-4 rounded-lg">
+                <input type="text" id="" placeholder="Enter your Phone Number" class="w-full border p-4 rounded-lg">
                 <h3 class="font-semibold">Email ID</h3>
-                <input type="email" id="" placeholder="Enter your name" class="w-full border p-4 rounded-lg">
+                <input type="email" id="" placeholder="Enter your Email" class="w-full border p-4 rounded-lg">
                 <button class="btn button-white">Next</button>
             </div>
               <!-- useless can ignore as well -->
