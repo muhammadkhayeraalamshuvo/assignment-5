@@ -119,8 +119,8 @@ phone.addEventListener("keyup",function(){
 
 
 // scroll to seat section
-const goToSeatSectionButton=document.getElementById("go-to-seat-section-button");
-const seatSection=document.getElementById("seat-section");
-goToSeatSectionButton.addEventListener("click",function(){
- seatSection.scrollIntoView({behavior:"smooth"});
-});
+// const goToSeatSectionButton=document.getElementById("go-to-seat-section-button");
+// const seatSection=document.getElementById("seat-section");
+// goToSeatSectionButton.addEventListener("click",function(){
+//  seatSection.scrollIntoView({behavior:"smooth"});
+// });
