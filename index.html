@@ -254,17 +254,29 @@
                      <input type="text" id="phone" placeholder="Enter your Phone Number" class="w-full border p-4 rounded-lg">
                      <h3 class="font-semibold">Email ID</h3>
                      <input type="email" id="" placeholder="Enter your Email" class="w-full border p-4 rounded-lg">
-                     <button class="btn button-white" id="next-button" disabled>Next</button>
+                     <button class="btn button-white" id="next-button" onclick="my_modal_5.showModal()" disabled >Next</button>
+                    
+                     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                        <div class="modal-box space-y-5 ">
+                         <div class="mx-auto w-[100px]"><img src="images/success.png" alt=""></div>
+                          <h3 class="font-bold text-lg text-center text-[#27AE60]">Success</h3>
+                          <p class="text-center font-medium">Thank you for Booking Our Bus Seats. <br>
+                            We are working hard to find the best service and deals for you. <br><br>
+                           <span class="font-normal"> Shortly you will find a confirmation in your email.</span></p>
+                          <div class="">
+                            <form method="dialog">
+                              <!-- if there is a button in form, it will close the modal -->
+                             <div class="w-[300px] mr-10 mx-auto "> <button class="btn px-24 button-white">Continue</button></div>
+                            </form>
+                          </div>
+                        </div>
+                      </dialog>
+
+
+
+
                  </div>
-                 <!-- <form class="mt-5 flex flex-col gap-5">
-                     <h3  class="font-semibold">Passenger Name*</h3>
-                     <input type="text" id="" placeholder="Enter your name" class="w-full border p-4 rounded-lg">
-                     <h3 class="font-semibold">Phone Number*</h3>
-                     <input type="text" id="phone" placeholder="Enter your Phone Number" class="w-full border p-4 rounded-lg required">
-                     <h3 class="font-semibold">Email ID</h3>
-                     <input type="email" id="" placeholder="Enter your Email" class="w-full border p-4 rounded-lg">
-                     <button class="btn button-white" id="next-button" disabled>Next</button>
-                 </form> -->
+      
                    <!-- useless can ignore as well -->
                 <div class="flex justify-between ml-4 mt-5 mb-5 mr-4 text-[#03071299]">
                  <a href="#"><u>Terms and Conditions</u></a>
