@@ -27,7 +27,7 @@
       
         // those which selected add background color
         event.currentTarget.classList.add("button-white");
-        
+        event.target.disabled=true;
        
         
 
@@ -55,6 +55,9 @@
   const coupon=document.getElementById("coupon");
   const couponValue=coupon.value;
   if(count===5){
+    // if(couponValue!=="NEW15" || couponValue!=="Couple 20"){
+    //   alert("wrong coupon");
+    // }
     if(couponValue==="NEW15" ){
       const discount=parseFloat(convertGrandTotal*(85/100));
       const discountPrice=parseFloat(convertGrandTotal*(15/100));
@@ -72,9 +75,24 @@
     }
     else if(couponValue==="Couple 20"){
       const couple=parseFloat(convertGrandTotal*(80/100));
+      const couplePrice=parseFloat(convertGrandTotal*(20/100));
+
       grandTotal.innerText=couple; 
       coupon.setAttribute('disabled','disabled') ;
       event.currentTarget.disabled=true;
+      const discountID=document.getElementById("discount");
+      const p=document.createElement("p");
+      const p1=document.createElement("p1");
+      p.innerText='Discount';
+      p1.innerText='BDT'+" "+couplePrice;
+      discountID.appendChild(p);
+      discountID.appendChild(p1);
+
+    }
+    else
+    {
+      alert("wrong coupon");
+      
     }
   }
   else{
