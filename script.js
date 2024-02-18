@@ -115,4 +115,12 @@ phone.addEventListener("keyup",function(){
   if(count>2 && phone.value.length>0){
     nextButton.disabled=false;
   }
-})
+});
+
+
+// scroll to seat section
+const goToSeatSectionButton=document.getElementById("go-to-seat-section-button");
+const seatSection=document.getElementById("seat-section");
+goToSeatSectionButton.addEventListener("click",function(){
+ seatSection.scrollIntoView({behavior:"smooth"});
+});
