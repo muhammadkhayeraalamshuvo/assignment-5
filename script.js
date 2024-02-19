@@ -57,6 +57,7 @@
 
   const coupon=document.getElementById("coupon");
   const couponValue=coupon.value;
+  console.log(couponValue);
   if(count===5){
     // if(couponValue!=="NEW15" || couponValue!=="Couple 20"){
     //   alert("wrong coupon");
@@ -101,7 +102,7 @@
   else{
     alert("you have to buy 4 tickets to get the offer of coupon sir")
   }
-  coupon.value=' ';
+  coupon.value='';
 });
 
 // form next button
