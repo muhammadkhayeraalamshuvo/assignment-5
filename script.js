@@ -57,7 +57,7 @@
 
   const coupon=document.getElementById("coupon");
   const couponValue=coupon.value;
-  console.log(couponValue);
+  // console.log(couponValue);
   if(count===5){
     // if(couponValue!=="NEW15" || couponValue!=="Couple 20"){
     //   alert("wrong coupon");
@@ -113,10 +113,30 @@ const phone=document.getElementById("phone");
 
 // console.log(phone.value);
 phone.addEventListener("keyup",function(){
-  if(count>2 && phone.value.length>0){
+  if(count>1 && phone.value.length>0){
     nextButton.disabled=false;
   }
 });
+
+// phone.addEventListener("keypress",function(){
+  // if(count>2 && phone.value.length>0){
+  //   nextButton.disabled=false;
+  // }
+//    console.log(phone.value);
+// })
+
+for(const seat of seats){
+  seat.addEventListener("click",function(){
+    if(count>1 && phone.value.length>0){
+      nextButton.disabled=false;
+    }
+  })
+}
+
+
+
+
+
 
 
 // scroll to seat section
