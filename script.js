@@ -57,6 +57,7 @@
 
   const coupon=document.getElementById("coupon");
   const couponValue=coupon.value;
+  const couponDisplay=document.getElementById("after-coupon-display");
   // console.log(couponValue);
   if(count===5){
     // if(couponValue!=="NEW15" || couponValue!=="Couple 20"){
@@ -68,6 +69,9 @@
       grandTotal.innerText=discount; 
       coupon.setAttribute('disabled','disabled') ;
       coupon.setAttribute('style','display:none') ;
+      const afterCouponDisplay=document.createElement("p");
+      afterCouponDisplay.innerText="Congratulations you unlocked coupon discount!";
+      couponDisplay.appendChild(afterCouponDisplay);
       event.currentTarget.disabled=true;
       event.currentTarget.setAttribute('style','display:none');
       const discountID=document.getElementById("discount");
@@ -86,6 +90,9 @@
       grandTotal.innerText=couple; 
       coupon.setAttribute('disabled','disabled') ;
       coupon.setAttribute('style','display:none') ;
+      const afterCouponDisplay2=document.createElement("p");
+      afterCouponDisplay2.innerText="Congratulations you unlocked coupon discount!";
+      couponDisplay.appendChild(afterCouponDisplay2);
       event.currentTarget.disabled=true;
       const discountID=document.getElementById("discount");
       event.currentTarget.setAttribute('style','display:none');
