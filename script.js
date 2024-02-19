@@ -67,7 +67,9 @@
       const discountPrice=parseFloat(convertGrandTotal*(15/100));
       grandTotal.innerText=discount; 
       coupon.setAttribute('disabled','disabled') ;
+      coupon.setAttribute('style','display:none') ;
       event.currentTarget.disabled=true;
+      event.currentTarget.setAttribute('style','display:none');
       const discountID=document.getElementById("discount");
       const p=document.createElement("p");
       const p1=document.createElement("p1");
@@ -83,8 +85,10 @@
 
       grandTotal.innerText=couple; 
       coupon.setAttribute('disabled','disabled') ;
+      coupon.setAttribute('style','display:none') ;
       event.currentTarget.disabled=true;
       const discountID=document.getElementById("discount");
+      event.currentTarget.setAttribute('style','display:none');
       const p=document.createElement("p");
       const p1=document.createElement("p1");
       p.innerText='Discount';
